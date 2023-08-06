@@ -83,9 +83,9 @@ const Footer = () => {
                                 <span className="fas fa-map-marker-alt"></span>
                             </div>
                             <div className="text">
-                                <span className="text">+91 1234567890</span>
-                                <span className="text">example123@gmail.com</span>
-                                <span className="text">India</span>
+                                <span className="text">+62 085883421924</span>
+                                <span className="text">kevin.subagio@gmail.com</span>
+                                <span className="text">Indonesia</span>
                             </div>
 
                         </div>

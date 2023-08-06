@@ -159,30 +159,70 @@ const steps = [
     userBubbleColor: '#FF7F50',
     userFontColor: '#fff',
   };
-  const Chatbot=(props)=>{
-if(props.open===true){
-  const [opens, setOpens] = useState(props.open);
-  useEffect(() => {
-   setOpens(props.open);
-}, [props.open]);
-console.log(opens);
-  return(
-    <ThemeProvider theme={theme}>
-    <ChatBot steps={steps} floating={true} opened={opens} toggleFloating={()=>{
-      setOpens(!opens);
-      
-    }}/>
-    </ThemeProvider>
+  
+  const Chatbot = (props) => {
+    const [opens, setOpens] = useState(props.open);
+  
+    useEffect(() => {
+      setOpens(props.open);
+    }, [props.open]);
+  
+    const steps = [
+      // Your steps configuration here
+    ];
+  
+    const theme = {
+      // Your theme configuration here
+    };
+  
+    if (props.open === true) {
+      return (
+        <ThemeProvider theme={theme}>
+          <ChatBot
+            steps={steps}
+            floating={true}
+            opened={opens}
+            toggleFloating={() => {
+              setOpens(!opens);
+            }}
+          />
+        </ThemeProvider>
       );
-}
-else{
-      return(
-    <ThemeProvider theme={theme}>
-    <ChatBot steps={steps} floating={true} />
-    </ThemeProvider>
+    } else {
+      return (
+        <ThemeProvider theme={theme}>
+          <ChatBot steps={steps} floating={true} />
+        </ThemeProvider>
       );
-  }
-  }
+    }
+  };
+  
   export default Chatbot;
+  
+//   const Chatbot=(props)=>{
+// if(props.open===true){
+//   const [opens, setOpens] = useState(props.open);
+//   useEffect(() => {
+//    setOpens(props.open);
+// }, [props.open]);
+// console.log(opens);
+//   return(
+//     <ThemeProvider theme={theme}>
+//     <ChatBot steps={steps} floating={true} opened={opens} toggleFloating={()=>{
+//       setOpens(!opens);
+      
+//     }}/>
+//     </ThemeProvider>
+//       );
+// }
+// else{
+//       return(
+//     <ThemeProvider theme={theme}>
+//     <ChatBot steps={steps} floating={true} />
+//     </ThemeProvider>
+//       );
+//   }
+//   }
+//   export default Chatbot;
   
   
