@@ -47,6 +47,7 @@ import teacherjoin from "./../assets/teacherjoin.jpg";
 import Whyedu1 from "./../assets/Whyedu1.png";
 import Whyedu2 from "./../assets/Whyedu2.png";
 import pro from "./../assets/pro.jpg";
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 
     Logo,
