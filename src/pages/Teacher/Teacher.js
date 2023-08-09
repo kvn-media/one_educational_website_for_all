@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import "./Teacher.css";
 import ImgSrc from "../../shared/ImgSrc";
-import Slide from "react-reveal/Slide";
-import Bounce from "react-reveal/Bounce";
+import {Bounce,Slide} from "react-reveal";
 import Footer from "../../components/Footer/Footer";
 
 const Feature_teacher = (props) => {
